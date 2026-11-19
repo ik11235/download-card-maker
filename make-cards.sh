@@ -56,6 +56,11 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+if ! command -v typst >/dev/null 2>&1; then
+  echo "typst が見つかりません。mise を使う場合は mise install、使わない場合は brew install typst などで入れてください" >&2
+  exit 1
+fi
+
 if [[ -z "$font" ]]; then
   available="$(typst fonts)"
   for candidate in "Hiragino Sans" "Noto Sans CJK JP" "Noto Sans JP" "Yu Gothic"; do
