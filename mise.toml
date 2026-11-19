@@ -1,0 +1,6 @@
+[tools]
+typst = "0.15.1"
+
+[tasks.cards]
+description = "ダウンロードカードの PDF を作る（引数は make-cards.sh と同じ）"
+run = "./make-cards.sh"
