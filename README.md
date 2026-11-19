@@ -76,6 +76,16 @@ typst compile \
   cards.typ cards.pdf
 ```
 
+## 実行例
+
+```sh
+mise run cards -- --title "テスト本" --url "https://example.com/xxxx" --deadline "2027年3月31日まで"
+```
+
+上のコマンドで作った PDF を画像にしたものです（既定の 3×5）。
+
+![実行例: A4 に 3×5 枚のカードが並んだ PDF](docs/example.png)
+
 ## レイアウト
 
 - 用紙は A4、余白は 10mm です。余白の内側を列数×行数で等分し、1枚の大きさを決めます。3×5 なら約 63×55mm です
